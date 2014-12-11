@@ -3,6 +3,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
 
 # Installation
 1. virtualenv / virtualenvwrapper
+
     Install [virtualenv], [virtualenvwrapper] and configure a virtual enviorenment for the application.
 
     ```
@@ -10,6 +11,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
     ```
 
 2. Get the source
+
     Clone the repository to your work space.
 
     ```
@@ -17,6 +19,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
     ```
 
 3. Install the required plugins
+
     Source folder contains a folder named 'required' with a file prod.txt which contains all the dependencies.
 
     ```
@@ -33,6 +36,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
     ```
 
 5. Edit configuration
+
     Edit the below configurations in settings/common.py with your account data.
 
     ```
@@ -46,6 +50,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
     ```
 
 6. Run the project
+
     Go to the project root folder in a command shell and run the below command
 
     ```
