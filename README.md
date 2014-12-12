@@ -1,5 +1,7 @@
 # Introduction
-CloudFS user signup REST API provide end points for user creation and authentication.
+CloudFS user signup REST API facilitate both user creation and authentication. However this API is restricted to only authentication functionality and not user creation if you are a prototype account holder.
+
+This API was built and tested on Python 2.7.5
 
 # Installation
 1. virtualenv / virtualenvwrapper
@@ -8,6 +10,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
 
     ```
     $ mkvirtualenv projectname
+    $ workon projectname
     ```
 
 2. Get the source
@@ -15,7 +18,9 @@ CloudFS user signup REST API provide end points for user creation and authentica
     Clone the repository to your work space.
 
     ```
-    $ git clone [git-repo-url] projectname
+    $ cd /path/to/your/workspace
+    $ git clone https://github.com/bitcasa/CloudFS-Python-User-Signup.git projectname
+    $ cd projectname
     ```
 
 3. Install the required plugins
@@ -23,8 +28,8 @@ CloudFS user signup REST API provide end points for user creation and authentica
     Source folder contains a folder named 'required' with a file prod.txt which contains all the dependencies.
 
     ```
-    $ workon projectname
-    $ cd projectname/requirements
+
+    $ cd requirements
     $ pip install -r prod.txt
     ```
 
@@ -37,15 +42,15 @@ CloudFS user signup REST API provide end points for user creation and authentica
 
 5. Edit configuration
 
-    Edit the below configurations in settings/common.py with your account data.
+    Edit the below configurations in settings/common.py with API endpoint, Client ID, Client secret, Admin Id and Admin secret data obtained from Bitcasa account to enable user creation and authentication feature. If you do not hold admin related details that is only available for paid account users, please leave the values blank.
 
     ```
     CLOUD_FS_SETTINGS = {
-        'API_SERVER': 'xxxxx.cloudfs.io',  
-        'CLIENT_ID': 'xxxxxxxxxx',  
-        'SECRET_KEY': 'xxxxxxxxxxxxxxxxxxxxxxxxxx',  
-        'ADMIN_ID': 'xxxxxxxxx',  
-        'ADMIN_SECRET': 'xxxxxxx'  
+        'API_SERVER': 'xxxxx.cloudfs.io',
+        'CLIENT_ID': 'xxxxxxxxxx',
+        'SECRET_KEY': 'xxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'ADMIN_ID': 'xxxxxxxxx',
+        'ADMIN_SECRET': 'xxxxxxx'
     }
     ```
 
@@ -57,7 +62,7 @@ CloudFS user signup REST API provide end points for user creation and authentica
     python manage.py runserver
     ```
 
-    Check urls localhost/api/user/, localhost/api/authenticate/
+    Check urls http://127.0.0.1:8000/api/user/, http://127.0.0.1:8000/api/authenticate/
 
 
 # API
@@ -79,10 +84,10 @@ If the user is created successfully server will send a response with http status
 
 Response parameters.
 * success - True, False indicating whether the user creation is success or failure
-* message - The detail message 
+* message - The detail message
 
 ####Authenticate
-End point for retrieving auth token. 
+End point for retrieving auth token.
 ```
 <hostname>/api/authenticate/
 ```
@@ -96,7 +101,7 @@ If the request is successfull server will send a response with http status code 
 Response parameters.
 * auth_token - The authrorization token if the request is successfull
 * success - True, False indicating whether the token generation is success or failure
-* message - The detail message 
+* message - The detail message
 
 [virtualenv]:http://virtualenv.readthedocs.org/en/latest/virtualenv.html
 [virtualenvwrapper]:http://virtualenvwrapper.readthedocs.org/en/latest/install.html
