@@ -28,10 +28,17 @@ This API was built and tested on Python 2.7.5
     Source folder contains a folder named 'required' with a file prod.txt which contains all the dependencies.
 
     ```
-
     $ cd requirements
     $ pip install -r prod.txt
     ```
+
+    If you are not on a virtual environment run the above command with sudo.
+
+    ```
+    $ cd requirements
+    $ sudo pip install -r prod.txt
+    ```
+    
 
 4. Create a simlink for settings file.
 
@@ -40,7 +47,13 @@ This API was built and tested on Python 2.7.5
     ln -s prod.py local.py
     ```
 
-5. Edit configuration
+5. Set host/domain names Django API can serve.
+
+    Open settings/common.py and update ALLOWED_HOSTS to host or domain name.
+    ALLOWED_HOSTS = ['127.0.0.1']
+
+
+6. Edit configuration
 
     Edit the below configurations in settings/common.py with API endpoint, Client ID, Client secret, Admin Id and Admin secret data obtained from Bitcasa account to enable user creation and authentication feature. If you do not hold admin related details that is only available for paid account users, please leave the values blank.
 
@@ -54,7 +67,7 @@ This API was built and tested on Python 2.7.5
     }
     ```
 
-6. Run the project
+7. Run the project
 
     Go to the project root folder in a command shell and run the below command
 
