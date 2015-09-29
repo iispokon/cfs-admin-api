@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -104,10 +104,43 @@ STATICFILES_FINDERS = (
 
 STATIC_URL = '/static/'
 
+
+"""
+#3-Denmark
 CLOUD_FS_SETTINGS = {
-    'API_SERVER': 'xk09pv9fc5.cloudfs.io',
-    'CLIENT_ID': 'bJ9tTcy2DnvBbF7hJ2j_MSEgfDJ5wXmrN9QcJh04e7A',
-    'SECRET_KEY': '1y5U1eIVhW4SHonquOCtzbpNotM6wd7OUTFOwMcEIjpBs20i92P26Aa0Df_67CzsXxXZcoirM9ogJ48HmlMULQ',
-    'ADMIN_ID': 'WjibAbRNxBIkxPF5MwLnb_sgB78oZ7H2fHONi0OQdno',
-    'ADMIN_SECRET': 'eXbF2B1HKAw8_GwP77JEKsNvATHqChR0r6UYj9uD8wDHL3XCYdpisFtoZgBlnXwTf0NT-74vOPNK06Tgub_cyQ'
+    'API_SERVER': 'sdext-access.cloudfs.io',
+    'CLIENT_ID': 'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
+    'SECRET_KEY': 'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA',
+    'ADMIN_ID': 'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
+    'ADMIN_SECRET': 'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA'
 }
+"""
+
+#Indosat
+CLOUD_FS_SETTINGS = {
+    'API_SERVER': 'sdext-access.cloudfs.io',
+    'CLIENT_ID': 'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
+    'SECRET_KEY': '6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw',
+    'ADMIN_ID': 'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
+    'ADMIN_SECRET': '6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw'
+}
+
+"""
+#Ooredoo Qatar
+CLOUD_FS_SETTINGS = {
+    'API_SERVER': 'sdext-access.cloudfs.io',
+    'CLIENT_ID':    'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
+    'SECRET_KEY':   '1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A',
+    'ADMIN_ID':     'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
+    'ADMIN_SECRET': '1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A'
+}"""
+
+"""
+#Zain Jordan
+CLOUD_FS_SETTINGS = {
+    'API_SERVER': 'sdext-access.cloudfs.io',
+    'CLIENT_ID':    'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M',
+    'SECRET_KEY':   'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ',
+    'ADMIN_ID':     'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M',
+    'ADMIN_SECRET': 'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ'
+}"""

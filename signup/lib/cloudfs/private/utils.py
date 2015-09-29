@@ -20,6 +20,7 @@ def make_utf8(data_string):
     """
     if isinstance(data_string, unicode):
         return data_string.encode('utf8')
+
     return data_string
 
 def utf8_quote_plus(url, safe=''):

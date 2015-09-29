@@ -69,6 +69,9 @@ rest_endpoints = {
         'data':   {'grant_type':'password'},
         'method': 'POST'
     },
+
+
+
     # REST Documentation: https://www.bitcasa.com/cloudfs-api-docs/api/Create%20Account.html
     'create account': {
         'params': {},
@@ -76,6 +79,23 @@ rest_endpoints = {
         'data':   {},
         'method': 'POST'
     },
+
+
+    # Turnkey APIs
+    'create tkey account': {
+        'params': {},
+        'url':    '/v2/admin/tkey/customers/',
+        'data':   {},
+        'method': 'POST'
+    },
+    'account state': {
+        'params': {},
+        'url':    '/v2/admin/customers/accountState',
+        'data':   {},
+        'method': 'POST'
+    },
+
+
     # REST Documentation: https://www.bitcasa.com/cloudfs-api-docs/api/Get%20Profile.html
     'get user profile':{
         'params': {},

@@ -35,7 +35,10 @@ class Session(object):
         self.admin_rest_interface = CloudFSRESTAdapter(self.endpoint, admin_client_id, admin_secret)
 
     # currently broken server side. Not recommended for use.
-    def create_account(self, username, password, email=None, first_name=None, last_name=None, log_in_after_creation=False, debug=False):
+    def create_account(self, username, password, email=None, first_name=None, last_name=None,
+                       account_plan_uuid=None, current_date=None,
+                       log_in_after_creation=False, debug=False,
+                       tkey=False):
         """Create a user account associated with your CloudFS account.
 
         Warning: This method is currently broken, and will almost certainly 500. If you're interested, or the method has
@@ -62,14 +65,27 @@ class Session(object):
         if debug:
             self.admin_rest_interface.debug_requests(1)
 
-        response = self.admin_rest_interface.create_account(username, password, email, first_name, last_name)
+        response = self.admin_rest_interface.create_account(username, password, email, first_name, last_name,
+                                                            account_plan_uuid, current_date, tkey)
         if log_in_after_creation:
             self.authenticate(username, password, debug)
         return User(self.rest_interface.get_copy(),
                     response)
 
+    def account_state(self, user_id, username=None, first_name=None, last_name=None, plan_code=None, expiration_date=None, debug=False):
+        """
+        """
+        if not self.admin_rest_interface:
+            raise operation_not_allowed("Account updates without admin credentials")
+
+        if debug:
+            self.admin_rest_interface.debug_requests(1)
+
+        return self.admin_rest_interface.account_state(user_id, username, first_name, last_name,
+                                                       plan_code, expiration_date)
+
     # link this session to an account
-    def authenticate(self, username, password, debug=False):
+    def authenticate(self, username, password, debug=True):
         """ Attempt to log into the given users' filesystem.
         :param username:    Username of the user.
         :param password:    Password of the user.

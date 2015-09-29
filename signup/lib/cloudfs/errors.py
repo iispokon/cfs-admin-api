@@ -373,6 +373,7 @@ def error_from_response(request, response):
             try:
                 error_class = _error_index[code]
             except KeyError:
+                print "raise unknown error"
                 # CloudFS instead of authenticated error because we don't really know
                 raise UnknownError(request, response, message)
 

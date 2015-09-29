@@ -112,7 +112,7 @@ class CloudFSRESTAdapter(object):
         return self.bc_conn.header_information
 
     def _make_request(self, request_name, path=None, data={}, params={}, headers={}, # standard arguments
-                      response_processor=None, files=None, oauth_request=False, background=False, share_key=None, version=None): # special case arguments
+                      response_processor=None, files=None, oauth_request=False, background=False, share_key=None, version=None, current_date=None): # special case arguments
         """Makes a request after merging standard request parameters with user-supplied data
 
         :param request_name:        Index into the rest_endpoints table in cloudfs_paths.py.
@@ -157,11 +157,12 @@ class CloudFSRESTAdapter(object):
             self.debug_count -= 1
 
         if oauth_request:
-            return self.bc_conn.oauth_request(url, merged_data, merged_params, request_data['method'])
+            return self.bc_conn.oauth_request(url, merged_data, merged_params, request_data['method'], current_date=current_date)
         else:
             return self.bc_conn.request(url, merged_data, merged_params, files, request_data['method'], response_processor, headers, background)
 
-    def create_account(self, username, password, email=None, first_name=None, last_name=None):
+    def create_account(self, username, password, email=None, first_name=None, last_name=None, account_plan_uuid=None,
+                       current_date=None, tkey=False):
         """Create a user account associated with your CloudFS account.
 
         Warning: This method is currently broken, and will almost certainly 500. If you're interested, or the method has
@@ -180,8 +181,8 @@ class CloudFSRESTAdapter(object):
         :return:            Dictionary containing JSON of new users' profile.
         """
         data = {
-            'username':username,
-            'password':password
+            'username': username,
+            'password': password
         }
         if email:
             data['email'] = email
@@ -190,7 +191,40 @@ class CloudFSRESTAdapter(object):
         if last_name:
             data['last_name'] = last_name
 
-        response = self._make_request('create account', data=data, oauth_request=True)
+        request_string = 'create account'
+
+        if tkey:
+            request_string = 'create tkey account'
+            if account_plan_uuid:
+                print "account plan = {}".format(account_plan_uuid)
+                data['account_plan_uuid'] = account_plan_uuid
+
+        response = self._make_request(request_string, data=data, oauth_request=True, current_date=current_date)
+        print "response1:{}".format(response)
+        return response['result']
+
+    def account_state(self, user_id, username=None, first_name=None, last_name=None, plan_code=None,
+                      expiration_date=None):
+        data = {
+            'user_id': user_id
+        }
+        if username:
+            data['username'] = username
+        if first_name:
+            data['first_name'] = first_name
+        if last_name:
+            data['last_name'] = last_name
+        if plan_code:
+            data['plan_code'] = plan_code
+        if expiration_date:
+            data['expiration_date'] = expiration_date
+            print "expiration date = {}, plan code={}".format(expiration_date, plan_code)
+
+        response = self._make_request('account state', data=data, oauth_request=True)
+
+        if response['error'] is not None:
+            return response['error']
+
         return response['result']
 
     def authenticate(self, username, password):
@@ -845,8 +879,8 @@ class CloudFSConnection(object):
 
         return all_threads_joined
 
-    def oauth_request(self, path, data={}, params={}, method='GET'):
-        result = self._request(path, method, data=data, params=params, oauth=True)
+    def oauth_request(self, path, data={}, params={}, method='GET', current_date=None):
+        result = self._request(path, method, data=data, params=params, oauth=True, current_date=current_date)
         if 'access_token' in result:
             self.auth_token = result['access_token']
 
@@ -865,11 +899,16 @@ class CloudFSConnection(object):
         else:
             raise session_not_linked_error()
 
-    def _get_base_headers(self, oauth=False):
+    @staticmethod
+    def _get_base_headers(oauth=False, current_date=None):
         headers = {}
         if oauth:
             headers['Content-Type'] = 'application/x-www-form-urlencoded; charset="utf-8"'
-        headers['Date'] = datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S GMT')
+        if current_date is not None:
+            print "current_date = {}".format(current_date)
+            headers['Date'] = current_date
+        else:
+            headers['Date'] = datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S GMT')
         headers['User-Agent'] = 'CloudFSPythonSDK/0.80.2'
 
         return headers
@@ -878,6 +917,18 @@ class CloudFSConnection(object):
     def _sign_request(self, method, path, query, headers):
 
         interesting_headers = ['content-type', 'date']
+
+        def encode_dict_nosort(d, sep):
+            encoded_options = []
+
+            for key in d.keys():
+                encoded_options.append('{encoded_key}{sep}{encoded_value}'.format(
+                    encoded_key=utf8_quote_plus(key),
+                    sep=sep,
+                    encoded_value=utf8_quote_plus(d[key])
+                ))
+
+            return '&'.join(encoded_options)
 
         def encode_dictionary(d, sep, filter=None):
             dict_to_encode = {}
@@ -911,12 +962,16 @@ class CloudFSConnection(object):
 
         sig_hmac = hmac.new(make_utf8(self.secret), digestmod=hashlib.sha1)
 
+        print "utf8(secret) = {}".format(make_utf8(self.secret))
+
         digest = '{method}&{path}&{query}&{headers}'.format(
             method=method,
             path=path,
             query=encode_dictionary(query, '='),
             headers=encode_dictionary(headers, ':', interesting_headers)
         )
+
+        print "digest = {}".format(digest)
 
         sig_hmac.update(digest)
 
@@ -971,14 +1026,14 @@ class CloudFSConnection(object):
         return filtered_dict
 
     # TODO: add streaming requests for downloads!
-    def _request(self, path, method, data={}, headers={}, params={}, files=None, response_processor=None, oauth=False, background=False):
+    def _request(self, path, method, data={}, headers={}, params={}, files=None, response_processor=None, oauth=False, background=False, current_date=None):
         single_debug = self.debug_one_request
         self.debug_one_request = False
 
         data = self._filter_arg_dictonary(data)
         params = self._filter_arg_dictonary(params)
         method = method.upper()
-        headers.update(self._get_base_headers(oauth))
+        headers.update(self._get_base_headers(oauth=oauth, current_date=current_date))
         if oauth:
             headers = self._sign_request(method, path, data, headers)
 
@@ -986,15 +1041,18 @@ class CloudFSConnection(object):
 
         base_request = requests.Request(method, url, headers, data=data, params=params, files=files)
         prepared_request = base_request.prepare()
+        self.prepared_request = 'Prepared_Request:\n{}'.format(request_to_string(prepared_request))
+        #print "{}".format(self.prepared_request)
 
         response = requests.Session().send(prepared_request, stream=background)
+        print "response_body:{}".format(response.body)
 
-
-        self.last_request_log = 'Request:\n{}Response:\n{}'.format(request_to_string(prepared_request), response_to_string(response))
+        self.last_request_log = 'Response:\n{}'.format(request_to_string(prepared_request), response_to_string(response))
         if single_debug:
-            print self.last_request_log
+            print "response status={}".format(response.status_code)
+            print "last request log:\n-----------\n{}".format(self.last_request_log)
 
-        if response.status_code >= 200 and response.status_code < 300:
+        if response.status_code >= 200 and response.status_code <= 400:
             self._save_x_headers(response.headers)
 
             if response_processor:
