@@ -1,5 +1,5 @@
 # Introduction
-The full set of Turnkey Admin APIs available through a REST interface. This was originally the CloudFS quickstart guide exposing the user and authenticate APIs but later expanded to include other Admin APIs such as /AccountState, /Create and /Delete
+The full set of Turnkey Admin APIs available through a REST interface. This was originally the CloudFS quickstart guide merely demoing user and authenticate APIs. Later expanded to include the Admin APIs such as AccountState, Create and Delete
 
 This API was built and tested on Python 2.7.5
 
