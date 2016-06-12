@@ -1,5 +1,5 @@
 # Introduction
-CloudFS user signup REST API facilitate both user creation and authentication. However this API is restricted to only authentication functionality and not user creation if you are a prototype account holder.
+A full set of CloudFS Admin APIs available through a REST interface. This was originally the CloudFS quickstart guiade exposing the user and authenticate APIs but later expanded to include other Admin APIs such as AccountState and Delete
 
 This API was built and tested on Python 2.7.5
 
@@ -25,7 +25,7 @@ This API was built and tested on Python 2.7.5
 
 3. Install the required plugins
 
-    Source folder contains a folder named 'required' with a file prod.txt which contains all the dependencies.
+    Source folder contains a folder named 'requirements' with a file prod.txt which contains all the dependencies.
 
     ```
     $ cd requirements
@@ -58,13 +58,11 @@ This API was built and tested on Python 2.7.5
     Edit the below configurations in settings/common.py with API endpoint, Client ID, Client secret, Admin Id and Admin secret data obtained from Bitcasa account to enable user creation and authentication feature. If you do not hold admin related details that is only available for paid account users, please leave the values blank.
 
     ```
-    CLOUD_FS_SETTINGS = {
-        'API_SERVER': 'xxxxx.cloudfs.io',
-        'CLIENT_ID': 'xxxxxxxxxx',
-        'SECRET_KEY': 'xxxxxxxxxxxxxxxxxxxxxxxxxx',
-        'ADMIN_ID': 'xxxxxxxxx',
-        'ADMIN_SECRET': 'xxxxxxx'
-    }
+    api_server = {'cfs': 'xxxx.cloudfs.io'}
+    client_id = {'cfs': 'xxxxxx'}
+    secret_key = {'cfs': 'xxxxxxxxxxxxx'}
+    admin_id = {'cfs': 'xxxxxx'}
+    admin_secret = {'cfs': 'xxxxxxxxxxxxx'}
     ```
 
 7. Run the project
@@ -75,11 +73,15 @@ This API was built and tested on Python 2.7.5
     python manage.py runserver
     ```
 
-    Check urls http://127.0.0.1:8000/api/user/, http://127.0.0.1:8000/api/authenticate/
+    Check urls http://127.0.0.1:8000/api/user/, 
+    http://127.0.0.1:8000/api/authenticate/, 
+    http://127.0.0.1:8000/api/accountState/, 
+    http://127.0.0.1:8000/api/create/, 
+    http://127.0.0.1:8000/api/delete/
 
 
 # API
-The API contains two end points
+The API contains the following end points
 ####User
 End point for creating a user.
 
@@ -115,6 +117,17 @@ Response parameters.
 * auth_token - The authrorization token if the request is successfull
 * success - True, False indicating whether the token generation is success or failure
 * message - The detail message
+
+
+####AccountState
+Documentation available from your Bitcasa SA or Sales Rep
+
+####Create
+Documentation available from your Bitcasa SA or Sales Rep
+
+####Delete
+Documentation available from your Bitcasa SA or Sales Rep
+
 
 [virtualenv]:http://virtualenv.readthedocs.org/en/latest/virtualenv.html
 [virtualenvwrapper]:http://virtualenvwrapper.readthedocs.org/en/latest/install.html
