@@ -120,12 +120,21 @@ Response parameters.
 
 
 ####AccountState
+```
+<hostname>/api/accountState/
+```
 Documentation available from your Bitcasa SA or Sales Rep
 
 ####Create
+```
+<hostname>/api/create/
+```
 Documentation available from your Bitcasa SA or Sales Rep
 
 ####Delete
+```
+<hostname>/api/delete/
+```
 Documentation available from your Bitcasa SA or Sales Rep
 
 
