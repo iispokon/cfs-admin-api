@@ -17,14 +17,14 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '8a7e%tx%+*vx49y2s!qz%fvu!cbf)s+oond3y5wdc&hvw5pymr'
+SECRET_KEY = 'xxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -104,46 +104,13 @@ STATICFILES_FINDERS = (
 
 STATIC_URL = '/static/'
 
+api_server = {'cfs': 'xxxx.cloudfs.io'}
+client_id = {'cfs': 'xxxxxx'}
+secret_key = {'cfs': 'xxxxxxxxxxxxx'}
+admin_id = {'cfs': 'xxxxxx'}
+admin_secret = {'cfs': 'xxxxxxxxxxxxx'}
 
-api_server = {'cfs':'yna65xy5kb.cloudfs.io',
-              '3-Denmark':'sdext-access.cloudfs.io',
-              'Indosat':'sdext-access.cloudfs.io',
-              'Ooredoo Qatar':'sdext-access.cloudfs.io',
-              'Ooredoo Qatar API':'ooredoo-qa.api.sandbox.cloudfs.io',
-              'Zain Jordan':'sdext-access.cloudfs.io'
-              }
-client_id = {'cfs':'wA-5oH1g6maFTldWxqb6fQxo_5sJEDKyPqN_kLiHfgo',
-             '3-Denmark':'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
-             'Indosat':'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
-             'Ooredoo Qatar':'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
-             'Ooredoo Qatar API':'4FxyBunuA-aYzzTKZTN6L8Z20TcPO3hAHAH7-nrqE4c',
-             'Zain Jordan':'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M'
-             }
-secret_key = {'cfs':'MiGpSaLxuryHAr_t2Yvd_q3tna9khvYHehuz_SOgH_uvBQBL69Aj3lc_nZenSArbsJatjyHIZ_C7WdkCmn7eUQ',
-              '3-Denmark':'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA',
-              'Indosat':'6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw',
-              'Ooredoo Qatar':'1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A',
-              'Ooredoo Qatar API':'yBGvyIkvKOwdQxi7gHwxM1x6d9HbDBeeIJjaWHmQsEkvm4NBCC5EaERgwaY4FD0onuzdMZQpJohChS4-wpYzrQ',
-              'Zain Jordan':'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ'
-              }
-admin_id = {'cfs':'wA-5oH1g6maFTldWxqb6fQxo_5sJEDKyPqN_kLiHfgo',
-            '3-Denmark':'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
-            'Indosat':'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
-            'Ooredoo Qatar':'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
-            'Ooredoo Qatar API':'4FxyBunuA-aYzzTKZTN6L8Z20TcPO3hAHAH7-nrqE4c',
-            'Zain Jordan':'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M'
-            }
-admin_secret = {'cfs':'MiGpSaLxuryHAr_t2Yvd_q3tna9khvYHehuz_SOgH_uvBQBL69Aj3lc_nZenSArbsJatjyHIZ_C7WdkCmn7eUQ',
-                '3-Denmark':'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA',
-                'Indosat':'6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw',
-                'Ooredoo Qatar':'1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A',
-                'Ooredoo Qatar API':'yBGvyIkvKOwdQxi7gHwxM1x6d9HbDBeeIJjaWHmQsEkvm4NBCC5EaERgwaY4FD0onuzdMZQpJohChS4-wpYzrQ',
-                'Zain Jordan':'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ'
-                }
-
-env = 'Zain Jordan'
-
-
+env = 'cfs'
 CLOUD_FS_SETTINGS = {
     'API_SERVER': api_server[env],
     'CLIENT_ID':  client_id[env],
@@ -151,59 +118,4 @@ CLOUD_FS_SETTINGS = {
     'ADMIN_ID':   admin_id[env],
     'ADMIN_SECRET': admin_secret[env]
 }
-
-
-# #cfs
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'yna65xy5kb.cloudfs.io',
-#     'CLIENT_ID':    'wA-5oH1g6maFTldWxqb6fQxo_5sJEDKyPqN_kLiHfgo',
-#     'SECRET_KEY':   'MiGpSaLxuryHAr_t2Yvd_q3tna9khvYHehuz_SOgH_uvBQBL69Aj3lc_nZenSArbsJatjyHIZ_C7WdkCmn7eUQ',
-#     'ADMIN_ID':     'wA-5oH1g6maFTldWxqb6fQxo_5sJEDKyPqN_kLiHfgo',
-#     'ADMIN_SECRET': 'MiGpSaLxuryHAr_t2Yvd_q3tna9khvYHehuz_SOgH_uvBQBL69Aj3lc_nZenSArbsJatjyHIZ_C7WdkCmn7eUQ'
-# }
-
-# #3-Denmark
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'sdext-access.cloudfs.io',
-#     'CLIENT_ID': 'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
-#     'SECRET_KEY': 'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA',
-#     'ADMIN_ID': 'TWUI9e1Vg7uEvv3-JDiEi4Xf5JCihPfftNvcjrnXiZQ',
-#     'ADMIN_SECRET': 'rZBQsgCJWJxmS563Q299k7GbG-vDX56Zb6JBydN1FdfjHaMo1YvcJ3kfVfy03CdwxrcrVDYLLBj9w8rOZ3EUkA'
-# }
-
-# #Indosat
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'sdext-access.cloudfs.io',
-#     'CLIENT_ID': 'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
-#     'SECRET_KEY': '6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw',
-#     'ADMIN_ID': 'qqibtTQqwJVnWyaZ0s3Jfux4YpDXDOF7YsULoUwf5oo',
-#     'ADMIN_SECRET': '6Ug9RgPjaaQyvAKdCjpPtDnheCbqqoXbDSsLM7ir-ldIPpjz3sAHmbz_sTqZP6n9pWcuqpbD-cD4ntwqVQRjKw'
-# }
-
-# #Ooredoo Qatar
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'sdext-access.cloudfs.io',
-#     'CLIENT_ID':    'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
-#     'SECRET_KEY':   '1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A',
-#     'ADMIN_ID':     'zCrYKyrOevDlqhDB2SpfcJ0-TlRJQa2LAggNmeG_2jQ',
-#     'ADMIN_SECRET': '1ou4t1Z6gqIq9PH7Mp3pq4-oNYoKN3PKx91r_NGdfdozW9tM7twG1f3NyFSYq6V6KV1E7eiCTJTNsNMnj7BJ3A'
-# }
-
-# #Ooredoo Qatar API
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'ooredoo-qa.api.sandbox.cloudfs.io',
-#     'CLIENT_ID':    '4FxyBunuA-aYzzTKZTN6L8Z20TcPO3hAHAH7-nrqE4c',
-#     'SECRET_KEY':   'yBGvyIkvKOwdQxi7gHwxM1x6d9HbDBeeIJjaWHmQsEkvm4NBCC5EaERgwaY4FD0onuzdMZQpJohChS4-wpYzrQ',
-#     'ADMIN_ID':     '4FxyBunuA-aYzzTKZTN6L8Z20TcPO3hAHAH7-nrqE4c',
-#     'ADMIN_SECRET': 'yBGvyIkvKOwdQxi7gHwxM1x6d9HbDBeeIJjaWHmQsEkvm4NBCC5EaERgwaY4FD0onuzdMZQpJohChS4-wpYzrQ'
-# }
-
-# #Zain Jordan
-# CLOUD_FS_SETTINGS = {
-#     'API_SERVER': 'sdext-access.cloudfs.io',
-#     'CLIENT_ID':    'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M',
-#     'SECRET_KEY':   'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ',
-#     'ADMIN_ID':     'y3T3XT7yrdVEQSGbqRHXpqK6nyaG_MFZ78AZtGR4A4M',
-#     'ADMIN_SECRET': 'kpd9QYVRma_Zn4GfKfHd1uqX-cWKjLlDwKzjPehtjkCF7vR3tRXfm1LAABGYT0yE_WgBZ-LPcN4Oo8qSmG4NpQ'
-# }
 

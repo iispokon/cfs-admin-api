@@ -1,5 +1,5 @@
 # Introduction
-A full set of CloudFS Admin APIs available through a REST interface. This was originally the CloudFS quickstart guide exposing the user and authenticate APIs but later expanded to include other Admin APIs such as AccountState and Delete
+The full set of Turnkey Admin APIs available through a REST interface. This was originally the CloudFS quickstart guide exposing the user and authenticate APIs but later expanded to include other Admin APIs such as /AccountState, /Create and /Delete
 
 This API was built and tested on Python 2.7.5
 
@@ -19,7 +19,7 @@ This API was built and tested on Python 2.7.5
 
     ```
     $ cd /path/to/your/workspace
-    $ git clone https://github.com/bitcasa/CloudFS-Python-User-Signup.git projectname
+    $ git clone https://github.com/iispokon/cfs-admin-api.git projectname
     $ cd projectname
     ```
 

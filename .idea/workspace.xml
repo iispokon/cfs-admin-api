@@ -2,54 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ae3cd4-b5dd-407e-a489-b4a5540d5dee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cfs-admin-api.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/db.sqlite3" afterPath="$PROJECT_DIR$/signup/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/prod/nginx.conf" afterPath="$PROJECT_DIR$/configs/prod/nginx.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/prod/uwsgi.ini" afterPath="$PROJECT_DIR$/configs/prod/uwsgi.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/qa/nginx.conf" afterPath="$PROJECT_DIR$/configs/qa/nginx.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/qa/uwsgi.ini" afterPath="$PROJECT_DIR$/configs/qa/uwsgi.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements/common.txt" afterPath="$PROJECT_DIR$/requirements/common.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements/dev.txt" afterPath="$PROJECT_DIR$/requirements/dev.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements/prod.txt" afterPath="$PROJECT_DIR$/requirements/prod.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements/staging.txt" afterPath="$PROJECT_DIR$/requirements/staging.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/__init__.py" afterPath="$PROJECT_DIR$/signup/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/apps/__init__.py" afterPath="$PROJECT_DIR$/signup/apps/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/apps/api/__init__.py" afterPath="$PROJECT_DIR$/signup/apps/api/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/apps/api/serializers.py" afterPath="$PROJECT_DIR$/signup/apps/api/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/apps/api/urls.py" afterPath="$PROJECT_DIR$/signup/apps/api/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/apps/api/views.py" afterPath="$PROJECT_DIR$/signup/apps/api/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/__init__.py" afterPath="$PROJECT_DIR$/signup/lib/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/__init__.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/account.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/account.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/container.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/container.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/errors.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/errors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/file.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/filesystem.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/filesystem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/item.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/item.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/media.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/media.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/path.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/path.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/__init__.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/cached_object.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/cached_object.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/filesystem_common.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/filesystem_common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/private/utils.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/private/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/session.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/session.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/share.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/share.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/lib/cloudfs/user.py" afterPath="$PROJECT_DIR$/signup/lib/cloudfs/user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/__init__.py" afterPath="$PROJECT_DIR$/signup/settings/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/common.py" afterPath="$PROJECT_DIR$/signup/settings/common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/dev.py" afterPath="$PROJECT_DIR$/signup/settings/dev.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/prod.py" afterPath="$PROJECT_DIR$/signup/settings/prod.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/qa.py" afterPath="$PROJECT_DIR$/signup/settings/qa.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/settings/staging.py" afterPath="$PROJECT_DIR$/signup/settings/staging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/testing.py" afterPath="$PROJECT_DIR$/signup/testing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/urls.py" afterPath="$PROJECT_DIR$/signup/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/views.py" afterPath="$PROJECT_DIR$/signup/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup/wsgi.py" afterPath="$PROJECT_DIR$/signup/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/.idea/cfs-admin-api.iml" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/apps/api/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/apps/api/views.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs_session.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/common.py" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/local.py" />
+      <change type="DELETED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/common.py" afterPath="" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/apps/api/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/serializers.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/apps/api/serializers.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/db.sqlite3" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/db.sqlite3" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/apps/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/account.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/account.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/container.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/container.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/errors.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/errors.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/file.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/file.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/filesystem.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/filesystem.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/item.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/item.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/media.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/media.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/path.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/path.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/cached_object.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/cached_object.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/cloudfs_paths.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/cloudfs_paths.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/filesystem_common.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/filesystem_common.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/rest_api_adapter.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/rest_api_adapter.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/utils.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/private/utils.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/session.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/session.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/share.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/share.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/user.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/lib/cloudfs/user.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/__init__.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/__init__.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/dev.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/dev.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/prod.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/prod.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/qa.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/qa.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/staging.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/staging.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/testing.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/testing.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/urls.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/urls.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/views.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/views.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/wsgi.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/README.md" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/README.md" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/prod/nginx.conf" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/prod/nginx.conf" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/prod/uwsgi.ini" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/prod/uwsgi.ini" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/qa/nginx.conf" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/qa/nginx.conf" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/qa/uwsgi.ini" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/configs/qa/uwsgi.ini" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/manage.py" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/manage.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/common.txt" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/common.txt" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/dev.txt" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/dev.txt" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/prod.txt" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/prod.txt" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/staging.txt" afterPath="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/requirements/staging.txt" />
     </list>
     <ignored path="cfs-python-user-signup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,7 +76,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/apps/api/views.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
               <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
@@ -80,15 +85,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="471">
-                <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <first_editor relative-caret-position="450">
+                <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -97,9 +102,9 @@
         </entry>
       </file>
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="135">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
@@ -109,7 +114,7 @@
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/apps/api/urls.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
@@ -118,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/settings/common.py">
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="360">
               <caret line="27" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
@@ -129,7 +134,7 @@
         </entry>
       </file>
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/apps/api/serializers.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
@@ -139,9 +144,9 @@
         </entry>
       </file>
       <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/session.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
+            <state relative-caret-position="1485">
               <caret line="105" column="54" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="54" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
@@ -151,9 +156,9 @@
         </entry>
       </file>
       <file leaf-file-name="rest_api_adapter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/rest_api_adapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="30">
               <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -163,7 +168,7 @@
         </entry>
       </file>
       <file leaf-file-name="cloudfs_paths.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py">
+        <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/cloudfs_paths.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1005">
               <caret line="67" column="35" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="35" />
@@ -175,22 +180,24 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/private/utils.py" />
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/errors.py" />
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/container.py" />
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py" />
-        <option value="$PROJECT_DIR$/signup/apps/api/urls.py" />
-        <option value="$PROJECT_DIR$/signup/settings/common.py" />
-        <option value="$PROJECT_DIR$/signup/apps/api/views.py" />
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/session.py" />
-        <option value="$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py" />
-        <option value="$PROJECT_DIR$/signup/apps/api/serializers.py" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/utils.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/errors.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/container.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/cloudfs_paths.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/urls.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/settings/common.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/views.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/session.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib/cloudfs/private/rest_api_adapter.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/apps/api/serializers.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/README.md" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/cfsadmin/settings/common.py" />
+        <option value="$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py" />
       </list>
     </option>
   </component>
@@ -225,50 +232,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-admin-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-admin-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cfs-python-user-signup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfs-admin-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-admin-api" />
+              <option name="myItemId" value="cfs-python-user-signup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-python-user-signup" />
+              <option name="myItemId" value="cfs-admin-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="signup" />
+              <option name="myItemId" value="cfsadmin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-admin-api" />
+              <option name="myItemId" value="cfs-python-user-signup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cfs-python-user-signup" />
+              <option name="myItemId" value="cfs-admin-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="signup" />
+              <option name="myItemId" value="cfsadmin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -278,17 +278,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PyCharmProjects/twilio/demo1/quickstart" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/signup/lib" />
+      <recent name="$USER_HOME$/PyCharmProjects/cfs-python-user-signup/signup/lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -444,12 +445,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="137" width="1400" height="895" extended-state="0" />
-    <editor active="true" />
+    <frame x="66" y="137" width="1400" height="895" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25785714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22033899" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22033899" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17503586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -482,7 +483,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/signup/lib/cloudfs/errors.py</url>
+          <url>file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/errors.py</url>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -490,14 +491,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/signup/settings/common.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="107" column="40" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/api/views.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="81" column="37" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="37" />
@@ -505,7 +506,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/session.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="31" />
@@ -515,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/rest_api_adapter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="973" column="8" selection-start-line="973" selection-start-column="8" selection-end-line="973" selection-end-column="8" />
@@ -532,7 +533,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/cloudfs_paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -540,14 +541,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/common.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/api/views.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="82" column="33" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="33" />
@@ -555,7 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/session.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="13" />
@@ -565,7 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/rest_api_adapter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="29" column="20" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="24" />
@@ -575,7 +576,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/cloudfs_paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="74" column="36" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="36" />
@@ -583,7 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/common.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -598,14 +599,14 @@
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/rest_framework/serializers.py" />
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/cached_object.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/cached_object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/user.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
@@ -628,7 +629,7 @@
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/rest_framework/status.py" />
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/utils.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
@@ -643,14 +644,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/filesystem.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/filesystem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/errors.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/errors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="462" column="21" selection-start-line="462" selection-start-column="21" selection-end-line="462" selection-end-column="21" />
@@ -661,63 +662,71 @@
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/cloudfs/private/rest_api_adapter.py" />
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/file.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/item.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/path.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs_session.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs_session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="48" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/__init__.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/__init__.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/urls.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/container.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/container.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/api/serializers.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
@@ -725,7 +734,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/cloudfs_paths.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/cloudfs_paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="67" column="35" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="35" />
@@ -733,9 +742,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/private/rest_api_adapter.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/private/rest_api_adapter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="30">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -743,9 +752,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/lib/cloudfs/session.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/lib/cloudfs/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
+        <state relative-caret-position="1485">
           <caret line="105" column="54" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="54" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
@@ -753,35 +762,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/dev.txt">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/requirements/dev.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/prod.txt">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/requirements/prod.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/staging.txt">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/requirements/staging.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/common.txt">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/apps/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/requirements/common.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/local.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="450">
+            <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/local.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -789,14 +826,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/dev.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/__init__.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -810,9 +847,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="135">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
@@ -820,46 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/settings/common.py">
+    <entry file="file://$USER_HOME$/PyCharmProjects/cfs-admin-api/cfsadmin/settings/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="360">
           <caret line="27" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup/apps/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="471">
-            <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
