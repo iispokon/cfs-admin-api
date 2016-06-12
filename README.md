@@ -1,5 +1,5 @@
 # Introduction
-A full set of CloudFS Admin APIs available through a REST interface. This was originally the CloudFS quickstart guiade exposing the user and authenticate APIs but later expanded to include other Admin APIs such as AccountState and Delete
+A full set of CloudFS Admin APIs available through a REST interface. This was originally the CloudFS quickstart guide exposing the user and authenticate APIs but later expanded to include other Admin APIs such as AccountState and Delete
 
 This API was built and tested on Python 2.7.5
 
